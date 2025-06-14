@@ -35,14 +35,27 @@ nav {
     backdrop-filter: blur(8px);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
+    overflow: auto;
+    white-space: nowrap;
     gap: 2rem;
+    scrollbar-width: thin;
+}
+
+.navbar::-webkit-scrollbar {
+    height: 6px;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
 }
 
 
 .nav-logo{
     max-width: 100px;
-    display: flex;
+    display: relative;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .nav-links{
@@ -51,6 +64,7 @@ nav {
     align-items: center;
     gap: 3rem;
     margin: auto;
+    justify-content: flex-end;
     
 }
 
@@ -81,6 +95,7 @@ nav {
     color: #fff;
     background-color: #547792;
     border-radius: 5px;
+    justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -184,6 +199,7 @@ section .header{
     font-weight: 600;
 }
 
+/* Features Site Style */
 .features{
     margin-top: 4rem;
     display: grid;
@@ -287,6 +303,58 @@ section .header{
     transform: scale(1.5);
     transition: transform 0.3s ease;
 }
+
+/* Project site */
+.project {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.project .card-project{
+    background-color: #547792;
+    padding: 2rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.project .card-project:hover{
+    background-color: #4f6d85;
+    border-color: #fff;
+}
+
+.project .card-project h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.project .card-project p{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.project .card-project a{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.project .card-project a:hover{
+    color: #F5E8C7;
+}
+
+
+.project .card-project img {
+    display: block;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
 
 .pricing{
     margin-top: 4rem;
@@ -420,7 +488,7 @@ footer .column > a:hover{
 
 @media (width < 900px){
     .nav-links{
-        display: none;
+        display: flex;
     }
     header{
         grid-template-columns: repeat(1, 1fr);
@@ -448,6 +516,15 @@ footer .column > a:hover{
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .project{
+        grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
+    }
+    .project .card-project img:hover {
+    position: relative;
+    opacity: 100%;
+    z-index: 2;
+}
+
     .pricing{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -456,3 +533,21 @@ footer .column > a:hover{
         grid-template-columns: 1fr 150px;
     }
 }
+
+@media (hover: hover) and (min-width: 768px)  {
+  .project .card-project img:hover {
+    transform: scale(2.0);
+    border-color: #1d4ed8;
+    position: relative;
+    opacity: 100%;
+    z-index: 10;
+  }
+
+  .project:hover .card-project:not(:hover) {
+    transform: scale(0.9);
+    filter: blur(1px);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+  }
+}
+
