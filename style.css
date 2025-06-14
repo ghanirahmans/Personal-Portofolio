@@ -242,6 +242,52 @@ section .header{
     color: #ccc;
 }
 
+.certificate{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(400px, 1fr));
+    grid-row-start: ;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.certificate:last-child{
+    justify-self: center;
+}
+
+.certificate .card-certificate{
+    padding: 2rem 2rem;
+    background-color: #547792;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 17px;
+    justify-content: center;
+}
+
+.certificate .card-certificate:hover{
+    background-color: #4f6d85;
+    border-color: #fff;
+}
+
+.certificate .card-certificate h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.certificate .card-certificate p{
+    margin-top: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.certificate .card-certificate img:hover{
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
 .pricing{
     margin-top: 4rem;
     display: grid;
