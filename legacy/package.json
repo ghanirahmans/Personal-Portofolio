@@ -1,0 +1,20 @@
+{
+  "name": "personal-portofolio",
+  "version": "1.0.0",
+  "description": "This project was created as part of my learning process in web development. The main goal is to deepen my understanding of the technologies used and to practice building real-world projects.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghanirahmans/Personal-Portofolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghanirahmans/Personal-Portofolio/issues"
+  },
+  "homepage": "https://github.com/ghanirahmans/Personal-Portofolio#readme"
+}

@@ -1,20 +1,24 @@
 {
-  "name": "personal-portofolio",
-  "version": "1.0.0",
-  "description": "This project was created as part of my learning process in web development. The main goal is to deepen my understanding of the technologies used and to practice building real-world projects.",
-  "main": "script.js",
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node script.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ghanirahmans/Personal-Portofolio.git"
+  "dependencies": {
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ghanirahmans/Personal-Portofolio/issues"
-  },
-  "homepage": "https://github.com/ghanirahmans/Personal-Portofolio#readme"
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "typescript": "^5.9.3"
+  }
 }
