@@ -23,10 +23,10 @@ export default function Hero() {
             Undergraduate in Information Technology at Muhammadiyah University of North Sumatra. I am deeply passionate about backend systems, data engineering, and creating scalable digital experiences.
           </p>
           <div className={styles.actions}>
-            <Link href="#project" className="btn">
+            <Link href="/#project" className="btn">
               Get Started
             </Link>
-            <Link href="#about" className="btn btn-outline">
+            <Link href="/about" className="btn btn-outline">
               Contact Me
             </Link>
           </div>
@@ -43,9 +43,13 @@ export default function Hero() {
               priority
             />
           </div>
-          {/* Decorative floating elements */}
-          <div className={`${styles.floatIcon} ${styles.icon1}`}><i className="ri-database-2-line"></i></div>
-          <div className={`${styles.floatIcon} ${styles.icon2}`}><i className="ri-server-line"></i></div>
+          {/* Decorative floating skill elements */}
+          <div className={`${styles.floatIcon} ${styles.icon1}`} title="JavaScript"><i className="ri-javascript-fill"></i></div>
+          <div className={`${styles.floatIcon} ${styles.icon2}`} title="TypeScript"><i className="ri-code-s-slash-line"></i></div>
+          <div className={`${styles.floatIcon} ${styles.icon3}`} title="Express.js"><i className="ri-terminal-box-line"></i></div>
+          <div className={`${styles.floatIcon} ${styles.icon4}`} title="Prisma"><i className="ri-database-2-line"></i></div>
+          <div className={`${styles.floatIcon} ${styles.icon5}`} title="MySQL"><i className="ri-database-line"></i></div>
+          <div className={`${styles.floatIcon} ${styles.icon6}`} title="PostgreSQL"><i className="ri-server-line"></i></div>
         </div>
       </div>
     </section>

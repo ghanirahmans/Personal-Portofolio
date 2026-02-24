@@ -86,6 +86,10 @@
   color: var(--accent-primary);
 }
 
+.mobileCloseBtn {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;

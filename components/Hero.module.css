@@ -63,6 +63,7 @@
 .highlight {
   background: var(--accent-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -102,6 +103,7 @@
   padding: 3px;
   background: var(--accent-gradient);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -130,17 +132,45 @@
 }
 
 .icon1 {
-  top: 15%;
-  left: 5%;
+  top: 5%;
+  left: 0%;
   animation: float 5s ease-in-out infinite;
-  color: #3b82f6;
+  color: #f7df1e; /* JS Yellow */
 }
 
 .icon2 {
-  bottom: 20%;
+  top: 15%;
+  right: -5%;
+  animation: float 6s ease-in-out infinite reverse;
+  color: #3178c6; /* TS Blue */
+}
+
+.icon3 {
+  top: 45%;
+  left: -15%;
+  animation: float 7s ease-in-out infinite;
+  color: #a8b2d1; /* Express Gray/White */
+}
+
+.icon4 {
+  top: 50%;
+  right: -15%;
+  animation: float 5.5s ease-in-out infinite reverse;
+  color: #16a394; /* Prisma Teal */
+}
+
+.icon5 {
+  bottom: 10%;
+  left: -5%;
+  animation: float 6.5s ease-in-out infinite;
+  color: #f29111; /* MySQL Orange */
+}
+
+.icon6 {
+  bottom: 5%;
   right: 5%;
-  animation: float 7s ease-in-out infinite reverse;
-  color: #8b5cf6;
+  animation: float 7.5s ease-in-out infinite reverse;
+  color: #336791; /* Postgres Blue */
 }
 
 @keyframes float {
@@ -183,9 +213,16 @@
   
   .title { font-size: 2.5rem; }
   
-  .icon1, .icon2 {
+  .icon1, .icon2, .icon3, .icon4, .icon5, .icon6 {
     width: 45px;
     height: 45px;
     font-size: 1.4rem;
   }
+
+  .icon1 { top: -5%; left: 10%; }
+  .icon2 { top: 5%; right: 10%; }
+  .icon3 { top: 40%; left: -5%; }
+  .icon4 { top: 50%; right: -5%; }
+  .icon5 { bottom: 0%; left: 15%; }
+  .icon6 { bottom: -10%; right: 15%; }
 }

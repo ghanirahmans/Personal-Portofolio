@@ -5,25 +5,25 @@ const featuresData = [
   {
     icon: "ri-macbook-line",
     title: "Full Stack Dev",
-    description: "Bangun aplikasi end-to-end tanpa repot! Tim Full Stack kami ahli menangani front-end yang user-friendly dan back-end yang powerful.",
+    description: "Saya bisa membantu membuat aplikasi sederhana end-to-end, dari tampilan yang rapi dan responsif sampai API, database dasar, serta deployment ringan.",
     color: "#3b82f6" // blue
   },
   {
     icon: "ri-bug-line",
     title: "Backend Dev",
-    description: "Kami pastikan sistem belakang aplikasi Anda bekerja cepat, aman, dan efisien. Fokus kami pada performa dan skalabilitas.",
+    description: "Saya membantu membangun dan merapikan back-end agar lebih terstruktur, aman secara basic, mudah dikembangkan, dan enak dipelihara ke depannya.",
     color: "#10b981" // green
   },
   {
     icon: "ri-database-line",
     title: "Data Engineering",
-    description: "Ubah data menjadi aset berharga! Layanan kami membantu Anda mengelola, memproses, dan menyiapkan data untuk analisis cerdas.",
+    description: "Saya bisa membantu menyiapkan data: cleaning, transformasi, dan pipeline sederhana agar data lebih siap dianalisis dan dipakai untuk laporan.",
     color: "#f59e0b" // yellow/orange
   },
   {
     icon: "ri-lock-password-line",
     title: "Cyber Security",
-    description: "Lindungi sistem dan data. Layanan kami mencakup pencegahan, deteksi, dan respons cepat untuk keamanan total bisnis Anda.",
+    description: "Saya bisa membantu pengecekan keamanan dasar seperti konfigurasi, best practice, dan review sederhana untuk mengurangi risiko dan celah umum.",
     color: "#ef4444" // red
   }
 ];
@@ -33,7 +33,7 @@ export default function Features() {
     <section id="features" className="section">
       <h2 className="section-title">OUR FEATURES</h2>
       <p className="section-subtitle">
-        Layanan unggulan kami untuk membantu kebutuhan digitalisasi dan teknologi Anda.
+        Layanan yang bisa saya bantu untuk kebutuhan digital dan teknologi Anda.
       </p>
       
       <div className={styles.grid}>
@@ -49,7 +49,7 @@ export default function Features() {
             <h3 className={styles.cardTitle}>{feat.title}</h3>
             <p className={styles.cardDesc}>{feat.description}</p>
             <Link href="#" className={styles.cardLink}>
-              Join Now <i className="ri-arrow-right-line"></i>
+              Hubungi Saya <i className="ri-arrow-right-line"></i>
             </Link>
           </div>
         ))}

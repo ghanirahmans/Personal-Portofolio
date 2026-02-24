@@ -34,9 +34,9 @@ export default function Navbar() {
           </div>
           <li className={styles.link}><Link href="/#home" onClick={toggleMenu}>Home</Link></li>
           <li className={styles.link}><Link href="/#features" onClick={toggleMenu}>Features</Link></li>
-          <li className={styles.link}><Link href="/#project" onClick={toggleMenu}>Project</Link></li>
-          <li className={styles.link}><Link href="/#certificate" onClick={toggleMenu}>Certificate</Link></li>
-          <li className={styles.link}><Link href="/#about" onClick={toggleMenu}>About</Link></li>
+          <li className={styles.link}><Link href="/projects" onClick={toggleMenu}>Project</Link></li>
+          <li className={styles.link}><Link href="/certificates" onClick={toggleMenu}>Certificate</Link></li>
+          <li className={styles.link}><Link href="/about" onClick={toggleMenu}>About</Link></li>
         </ul>
 
         <div className={styles.actions}>
