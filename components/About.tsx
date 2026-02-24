@@ -35,7 +35,7 @@ export default function About() {
             <Link href="https://youtube.com/@GhaniRahmans" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
               <i className="ri-youtube-fill"></i> YouTube
             </Link>
-            <Link href="https://instagram.com/ghanirahmans" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+            <Link href="https://instagram.com/ghani.rahmans" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
               <i className="ri-instagram-fill"></i> Instagram
             </Link>
           </div>
