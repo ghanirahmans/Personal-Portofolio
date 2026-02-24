@@ -23,11 +23,15 @@ export default function Navbar() {
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href="/#home">
-            <Image src="/logo/logo-white-bg-tran.png" alt="Logo" width={50} height={50} />
+            <Image src="/images/logo/logo-white-bg-tran.png" alt="Logo" width={50} height={50} />
           </Link>
         </div>
 
         <ul className={`${styles.navLinks} ${isOpen ? styles.open : ""}`}>
+          {/* Dedicated close button for mobile inside the menu */}
+          <div className={styles.mobileCloseBtn} onClick={toggleMenu}>
+            <i className="ri-close-line"></i>
+          </div>
           <li className={styles.link}><Link href="/#home" onClick={toggleMenu}>Home</Link></li>
           <li className={styles.link}><Link href="/#features" onClick={toggleMenu}>Features</Link></li>
           <li className={styles.link}><Link href="/#project" onClick={toggleMenu}>Project</Link></li>

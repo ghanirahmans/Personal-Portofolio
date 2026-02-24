@@ -91,6 +91,21 @@
     display: block;
   }
   
+  .mobileCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: color var(--transition-fast);
+  }
+  
+  .mobileCloseBtn:hover {
+    color: var(--accent-primary);
+  }
+  
   .navLinks {
     position: fixed;
     top: 0;
@@ -100,8 +115,8 @@
     background: var(--bg-secondary);
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    padding: 40px;
+    justify-content: flex-start;
+    padding: 30px 40px;
     transition: right var(--transition-bounce);
     box-shadow: -10px 0 30px rgba(0,0,0,0.5);
     border-left: 1px solid var(--border-light);

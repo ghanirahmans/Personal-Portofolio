@@ -11,7 +11,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.column}>
           <div className={styles.logo}>
-            <Image src="/logo/logo-white-bg-tran.png" alt="Logo" width={80} height={80} />
+            <Image src="/images/logo/logo-white-bg-tran.png" alt="Logo" width={80} height={80} />
           </div>
           <p className={styles.description}>
             Personal portfolio website that focuses on website development, especially backend, scalable architecture, and fullstack capabilities.
