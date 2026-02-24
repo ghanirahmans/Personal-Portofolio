@@ -35,7 +35,7 @@ export default function Hero() {
         <div className={styles.imageWrapper}>
           <div className={styles.imageBorder}>
             <Image 
-              src="/images/myphoto.png" 
+              src="/images/hero/myphoto.png" 
               alt="Ghaniyyir Rahman" 
               width={450} 
               height={450} 
