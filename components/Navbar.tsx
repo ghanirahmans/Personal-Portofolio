@@ -28,7 +28,6 @@ export default function Navbar() {
         </div>
 
         <ul className={`${styles.navLinks} ${isOpen ? styles.open : ""}`}>
-          {/* Dedicated close button for mobile inside the menu */}
           <div className={styles.mobileCloseBtn} onClick={toggleMenu}>
             <i className="ri-close-line"></i>
           </div>

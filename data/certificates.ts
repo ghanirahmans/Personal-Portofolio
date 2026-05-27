@@ -18,7 +18,7 @@ export const certificatesData: Certificate[] = [
   {
     title: "Memulai Pemrograman dengan Python",
     image: "/images/certificates/sertifikat_course_86_3065420_280125183413_page-0001.jpg",
-    link: "https://www.dicoding.com/certificates/07Z635E1YZQR" /* Link reused based on old code */
+    link: "https://www.dicoding.com/certificates/07Z635E1YZQR"
   },
   {
     title: "Belajar Dasar Visualisasi Data",

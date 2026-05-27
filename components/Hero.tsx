@@ -5,7 +5,6 @@ import styles from "./Hero.module.css";
 export default function Hero() {
   return (
     <section id="home" className={styles.hero}>
-      {/* Background glow effects */}
       <div className={`${styles.glow1} glow-blur`}></div>
       <div className={`${styles.glow2} glow-blur`}></div>
       
@@ -16,7 +15,7 @@ export default function Hero() {
             <span>PORTFOLIO WEBSITE</span>
           </div>
           <h1 className={styles.title}>
-            Hi, I'm <span className={styles.highlight}>Ghani</span>,<br/>
+            Hi, I&apos;m <span className={styles.highlight}>Ghani</span>,<br/>
             Backend Developer
           </h1>
           <p className={styles.description}>
@@ -43,7 +42,6 @@ export default function Hero() {
               priority
             />
           </div>
-          {/* Decorative floating skill elements */}
           <div className={`${styles.floatIcon} ${styles.icon1}`} title="JavaScript"><i className="ri-javascript-fill"></i></div>
           <div className={`${styles.floatIcon} ${styles.icon2}`} title="TypeScript"><i className="ri-code-s-slash-line"></i></div>
           <div className={`${styles.floatIcon} ${styles.icon3}`} title="Express.js"><i className="ri-terminal-box-line"></i></div>

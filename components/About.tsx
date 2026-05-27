@@ -17,7 +17,6 @@ export default function About() {
                 className={styles.image}
               />
             </div>
-            {/* Decorative background blocks */}
             <div className={styles.block1}></div>
             <div className={styles.block2}></div>
           </div>
